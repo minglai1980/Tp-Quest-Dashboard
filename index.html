@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>TP Quest Dashboard</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080b12;--panel:#111827;--line:#253047;--text:#f8fafc;--muted:#94a3b8;--ok:#34d399}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 20% 0,#172554 0,transparent 34%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--text)}
+    main{width:min(760px,calc(100% - 32px));padding:40px;border:1px solid var(--line);border-radius:24px;background:rgba(17,24,39,.86);box-shadow:0 24px 80px rgba(0,0,0,.36)}
+    .eyebrow{margin:0 0 14px;color:#93c5fd;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(34px,7vw,64px);line-height:1;letter-spacing:-.05em}
+    .lead{margin:20px 0 34px;color:var(--muted);font-size:18px;line-height:1.65}
+    .status{display:flex;align-items:center;gap:12px;padding:18px 20px;border:1px solid #1f493f;border-radius:14px;background:rgba(6,78,59,.18)}
+    .dot{width:11px;height:11px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 6px rgba(52,211,153,.13)}
+    .status strong{display:block}.status span{display:block;margin-top:3px;color:#a7f3d0;font-size:14px}
+    footer{margin-top:28px;color:#64748b;font-size:13px}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">TP Quest · Realtime State Center</p>
+    <h1>Dashboard is online.</h1>
+    <p class="lead">GitHub 已连接 Cloudflare Pages。今后提交到 <strong>main</strong> 分支的更新会自动发布到这个固定地址。</p>
+    <section class="status" aria-label="部署状态">
+      <i class="dot" aria-hidden="true"></i>
+      <div><strong>Deployment pipeline connected</strong><span>Codex → GitHub → Cloudflare Pages</span></div>
+    </section>
+    <footer>Bootstrap page · ready for the TP Quest dashboard</footer>
+  </main>
+</body>
+</html>
